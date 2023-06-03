@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+.maincontainer{
+    height: 100svh;
+    font-family: 'Crete Round', serif;
+}
+.container{
+    height: 100%;
+    background-image: url(./cloudBackgroud.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.inputField , .otherConditions{
+        background-color: #487eb4c9;
+        width: 45rem;
+        aspect-ratio: 3/1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 2rem;
+        position: relative;
+}
+#textInput{
+    padding-left: 3rem;
+    width: 60%;
+    aspect-ratio: 5/1;
+    font-size: 2.5rem;
+    border-radius: .8rem;
+}
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+    color: #161111;
+    cursor: pointer;
+}
+#submit{
+    cursor: pointer;
+    width: 25%;
+    aspect-ratio: 2.2/1;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: #dabb32da;
+    color: #46065a;
+  
+}
+.display{
+    background-color: #487eb4c9;
+    width: 45rem;
+    aspect-ratio: 3/2;
+    border-radius: 2rem;
+}
+.location, #divContain{
+    font-weight: 800;
+    margin-top: .5rem;
+    color: #46065a;
+}
+#city{
+    font-size: 3rem;
+}
+#date,#sup{
+    font-size: 2.5rem;
+}
+#divContain{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.weatherDisplay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    border: none;
+    object-fit: contain;
+    height: 12rem; 
+}
+#weather{
+    color: #dab821;
+    font-size: 6rem;
+}
+#descripton{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+#displayText{
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: #46065a;
+}
+.tempLevel{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.3rem;
+    text-align: center;
+    color: #46065a;
+    display: none;
+}
+
+button{
+    border: none;
+    background-color: #dabb32da;
+    width: 13rem;
+    aspect-ratio: 2/1;
+    font-size: 2.3rem;
+    color: #46065a;
+    border-radius: 2rem;
+}
