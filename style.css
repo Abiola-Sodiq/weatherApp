@@ -17,12 +17,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
-.inputField , .otherConditions{
+ .inputField , .otherConditions{
         background-color: #487eb4c9;
-        width: 45rem;
-        aspect-ratio: 3/1;
+        width: 25rem;
+        aspect-ratio: 3.6/1;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -30,16 +30,17 @@
         position: relative;
 }
 #textInput{
-    padding-left: 3rem;
+    padding-left: 2rem;
     width: 60%;
     aspect-ratio: 5/1;
-    font-size: 2.5rem;
-    border-radius: .8rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    position: relative;
 }
 .search-icon {
     position: absolute;
     top: 50%;
-    left: 3rem;
+    left: 2.5rem;
     transform: translateY(-50%);
     color: #161111;
     cursor: pointer;
@@ -47,16 +48,15 @@
 #submit{
     cursor: pointer;
     width: 25%;
-    aspect-ratio: 2.2/1;
-    font-size: 2rem;
-    font-weight: 800;
+    aspect-ratio: 2.3/1;
+    font-size: 1.2rem;
+    font-weight: 700;
     background-color: #dabb32da;
     color: #46065a;
-  
 }
 .display{
     background-color: #487eb4c9;
-    width: 45rem;
+    width: 25rem;
     aspect-ratio: 3/2;
     border-radius: 2rem;
 }
@@ -66,10 +66,10 @@
     color: #46065a;
 }
 #city{
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 #date,#sup{
-    font-size: 2.5rem;
+    font-size: 1rem;
 }
 #divContain{
     display: flex;
@@ -83,21 +83,20 @@
     align-items: center;
 }
 img{
-    border: none;
     object-fit: contain;
-    height: 12rem; 
+    height: 7rem; 
 }
 #weather{
     color: #dab821;
-    font-size: 6rem;
+    font-size: 3rem;
 }
 #descripton{
-    font-size: 2.5rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 #displayText{
-    font-size: 3.5rem;
-    font-weight: 800;
+    font-size: 1.5rem;
+    font-weight: 600;
     text-align: center;
     color: #46065a;
 }
@@ -105,8 +104,8 @@ img{
     align-items: center;
     display: flex;
     justify-content: space-around;
-    font-size: 2.3rem;
-    text-align: center;
+    font-size: 1.3rem;
+    /* text-align: center; */
     color: #46065a;
     display: none;
 }
@@ -114,9 +113,9 @@ img{
 button{
     border: none;
     background-color: #dabb32da;
-    width: 13rem;
+    width: 7rem;
     aspect-ratio: 2/1;
-    font-size: 2.3rem;
+    font-size: 1.3rem;
     color: #46065a;
     border-radius: 2rem;
 }
