@@ -8,7 +8,6 @@ let lowest = document.getElementById("lowest")
 let submitBtn = document.getElementById("submit")
 let descripton = document.getElementById("descripton")
 let newDate = document.getElementById("date")
-let image = document.getElementById("image")
 let tempLevel = document.querySelector(".tempLevel")
 let displayText = document.getElementById("displayText")
 
@@ -39,14 +38,7 @@ function getWeather() {
             newDate.textContent = currentDay + " " + currentMonth + "," + currentYear
             displayText.style.display="none"
             tempLevel.style.display="flex"
-
-            if (data.main.temp <= 10) {
-                image.src = "snow.gif"
-                
-            }
-            else if (data.main.temp <= 30) {
-                image.src = "rain.gif"
-            }
+            image.innerHTML = data.weather[0].icon
         })
 }
 getWeather()

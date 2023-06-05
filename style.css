@@ -1,14 +1,16 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 
 }
-.maincontainer{
+
+.maincontainer {
     height: 100svh;
     font-family: 'Crete Round', serif;
 }
-.container{
+
+.container {
     height: 100%;
     background-image: url(./cloudBackgroud.gif);
     background-repeat: no-repeat;
@@ -19,33 +21,27 @@
     flex-direction: column;
     gap: 1rem;
 }
- .inputField , .otherConditions{
-        background-color: #487eb4c9;
-        width: 25rem;
-        aspect-ratio: 3.6/1;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 2rem;
-        position: relative;
+
+.inputField,
+.otherConditions {
+    background-color: #487eb4c9;
+    width: 27rem;
+    aspect-ratio: 3.6/1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2rem;
 }
-#textInput{
-    padding-left: 2rem;
+
+#textInput {
+    padding-left: 1rem;
     width: 60%;
     aspect-ratio: 5/1;
     font-size: 1.5rem;
     border-radius: .5rem;
-    position: relative;
 }
-.search-icon {
-    position: absolute;
-    top: 50%;
-    left: 2.5rem;
-    transform: translateY(-50%);
-    color: #161111;
-    cursor: pointer;
-}
-#submit{
+
+#submit {
     cursor: pointer;
     width: 25%;
     aspect-ratio: 2.3/1;
@@ -54,68 +50,121 @@
     background-color: #dabb32da;
     color: #46065a;
 }
-.display{
+
+.display {
     background-color: #487eb4c9;
-    width: 25rem;
+    width: 27rem;
     aspect-ratio: 3/2;
     border-radius: 2rem;
+    padding-top: 2rem;
 }
-.location, #divContain{
+
+.location {
     font-weight: 800;
     margin-top: .5rem;
     color: #46065a;
-}
-#city{
-    font-size: 1.5rem;
-}
-#date,#sup{
-    font-size: 1rem;
-}
-#divContain{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1.5rem;
 }
+
+#date,
+#city {
+    font-size: 1.5rem;
+}
+
 .weatherDisplay {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
 }
-img{
-    object-fit: contain;
-    height: 7rem; 
-}
-#weather{
+
+#weather {
     color: #dab821;
-    font-size: 3rem;
+    font-size: 4rem;
 }
-#descripton{
-    font-size: 1.5rem;
+
+#descripton {
+    font-size: 2.5rem;
+    color: #ffffff;
     font-weight: 600;
 }
-#displayText{
+
+#displayText {
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     color: #46065a;
 }
-.tempLevel{
+
+.tempLevel {
     align-items: center;
     display: flex;
     justify-content: space-around;
     font-size: 1.3rem;
-    /* text-align: center; */
     color: #46065a;
     display: none;
 }
 
-button{
+button {
     border: none;
     background-color: #dabb32da;
-    width: 7rem;
+    width:30%;
     aspect-ratio: 2/1;
     font-size: 1.3rem;
     color: #46065a;
     border-radius: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .inputField,
+    .otherConditions {
+        width: 21rem;
+    }
+    #textInput {
+        font-size: 1.3rem;
+    }
+    
+    #submit {
+        cursor: pointer;
+        width: 30%;
+        aspect-ratio: 2.5/1;
+        font-size: 1.2rem;
+    }
+    .display {
+        width: 21rem;
+        padding-top: 1rem;
+    }
+    #displayText {
+        font-size: 1.3rem;
+    }
+    .location {
+        font-weight: 800;
+        margin-top: .5rem;
+        color: #46065a;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #date,
+    #city {
+        font-size: 1.2rem;
+    }
+    
+    #weather {
+        font-size: 3rem;
+    }
+    
+    #descripton {
+        font-size: 2.2rem;
+    }
+    button {
+        font-size: 1.1rem;
+    }
+    .tempLevel {
+        font-size: 1.1rem;
+    }
 }
